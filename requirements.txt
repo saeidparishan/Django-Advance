@@ -1,0 +1,23 @@
+Django==4.2
+python-decouple
+pillow
+djangorestframework
+django-filter
+drf-yasg
+djangorestframework-simplejwt
+
+# mail third party modules
+django-mail-templated
+
+# rahnama
+djoser
+
+# cilen code and reformat
+black
+flake8
+isort
+
+# test
+pytest
+pytest-django
+
