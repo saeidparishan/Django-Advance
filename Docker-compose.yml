@@ -20,7 +20,7 @@ services:
     ports:
       - "5000:80"   # Web UI
       - "25:25"     # SMTP
-      - "143:143"   # IMAP
+      - "143:143"   
     volumes:
       - smtp4dev-data:/smtp4dev
     environment:
