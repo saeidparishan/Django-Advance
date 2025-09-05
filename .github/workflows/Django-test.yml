@@ -7,14 +7,23 @@ on:
     branches: [ "master" ]
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Setup Docker-Compose
-      run: docker-compose -d
-    - name: Run tests
-      run:  docker exec backend sh -c "flake8 && pytest ."
+      - uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Set up Docker Compose
+        uses: docker/compose-action@v2
+        with:
+          compose-file: docker-compose.yml
+
+      - name: Build and start containers
+        run: docker compose up -d --build
+
+      - name: Run tests
+        run: docker compose exec backend sh -c "flake8 && pytest ."
+
