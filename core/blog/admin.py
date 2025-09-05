@@ -4,7 +4,7 @@ from .models import Category, Post
 
 
 class PostAdmin(admin.ModelAdmin):
-    list_display = ["author", "title", "status", "published_date", "category"]
+    list_display = ["author", "title", "status", "published_date", "category","image"]
     search_fields = ("title",)
 
 
