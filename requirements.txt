@@ -21,3 +21,5 @@ isort
 pytest
 pytest-django
 
+# fake data
+Faker
