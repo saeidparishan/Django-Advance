@@ -23,3 +23,6 @@ pytest-django
 
 # fake data
 Faker
+
+# Accessing the API from outside
+django-cors-headers

@@ -12,3 +12,5 @@ class IndexView(TemplateView):
         context["name"] = "ali"
         # context["posts"] = Post.objects.all()
         return context
+class PostListApiView(TemplateView):
+    template_name = "blog/post-list-api.html"

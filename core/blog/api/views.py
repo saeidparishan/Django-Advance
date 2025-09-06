@@ -64,6 +64,7 @@ class PostDetil(APIView):
 
 
 
+    
 ######## viewset.viewset ##############
 # class PostListViewSet(ViewSet):
 # permission_classes = [IsAuthenticated]
