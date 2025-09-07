@@ -2,16 +2,16 @@ from django.urls import path
 from rest_framework.routers import DefaultRouter, SimpleRouter
 
 from .views import (PostView, PostDetil,
-    #CategoryModelViewSet,
+    CategoryModelViewSet,
     #PostListModelViewSet, 
 )
 
 app_name = "api-v1"
 
 ### viewset url ####
-# router = DefaultRouter()
+router = DefaultRouter()
 # router.register("post", PostListModelViewSet, basename="post")
-# router.register("category", CategoryModelViewSet, basename="category")
+router.register("category", CategoryModelViewSet, basename="category")
 # urlpatterns = router.urls
 
 
