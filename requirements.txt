@@ -23,5 +23,8 @@ pytest-django
 
 
 # backegranound process and cache
-celery
 redis
+celery
+django-redis
+# django-celery-beat
+
