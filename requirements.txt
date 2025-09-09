@@ -21,8 +21,18 @@ isort
 pytest
 pytest-django
 
+<<<<<<< HEAD
 # fake data
 Faker
 
 # Accessing the API from outside
 django-cors-headers
+=======
+
+# backegranound process and cache
+redis
+celery
+django-redis
+# django-celery-beat
+
+>>>>>>> dev
